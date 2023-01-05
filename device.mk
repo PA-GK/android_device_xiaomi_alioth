@@ -165,6 +165,9 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/display/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.sf.use_latest_hwc_vsync_period=0
+
 # DPM
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.dpmhalservice.enable=1
